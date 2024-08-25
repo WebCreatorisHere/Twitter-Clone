@@ -1,0 +1,5 @@
+1. get all the files on the empty folder.
+
+2. download the node modules by "npm i"(Note: node should be installed)
+
+3. And The website is Ready!! Open the index.html in chrome.
