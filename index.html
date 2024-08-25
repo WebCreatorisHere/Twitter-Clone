@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="css_files/extra.css">
+    <link rel="stylesheet" href="css_files/scroolbar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="text-white bg-black">
+    <div class="cont mx-auto flex text-white">
+
+        <div class="first w-auto pr-5">
+
+            <div class="logo mb-2 mt-1 ml-3 hover:bg-lihover inline-block p-2 rounded-2xl">
+                <img class="log inline-block" width="32" src="imgs/logo.svg" alt="">
+            </div>
+          <div class="thina"></div>   <div class="sidebar">
+                
+                <ul class="flex flex-col cursor-pointer">
+                   <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="home"><img width="28" src="imgs/home.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Home</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="search"><img width="28" src="imgs/search.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Explore</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="notification"><img width="28" src="imgs/notification.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Notifications</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="mail"><img width="28" src="imgs/mail.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Messages</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="gork"><img width="28" src="imgs/gork.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Grok</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query">
+                        <div class="communities"><img width="28" src="imgs/communities.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">communities</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query hide">
+                        <div class="profile"><img width="28" src="imgs/profile.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">Profile</h2>
+                    </li>
+                    <li class="flex space-x-5 text-xl pl-3 py-3 ml-2 rounded-full hover:bg-lihover w-fit pr-6 query hide">
+                        <div class="more"><img width="28" src="imgs/more.svg" alt=""></div>
+                        <h2 class="max-[1285px]:hidden">More</h2>
+                    </li>
+                    <li class="flex controller text-xl pl-1 py-3 ml-2 mb-3 bb ">
+                        <button
+                            class="font-semibold max-[1285px]:hidden px-24 py-3 bg-btncolor rounded-full hover:bg-opacity-90">Post</button>
+                        <button
+                            class="font-semibold hidden max-[1285px]:inline-block px-4 py-3 bg-btncolor rounded-full hover:bg-opacity-90 ">SB</button>
+                    </li>
+
+                </ul>
+                <div
+                    class="idbox justify-between cursor-pointer ml-2 flex py-2 px-3.5 gap-3.5 max-[1285px]:gap-0 hover:bg-lihover rounded-full">
+                    <img class="db rounded-full max-[1285px]:w-8" width="46" src="imgs/cool-profile-picture-87h46gcobjl5e4xu.jpg" alt="">
+                    <div class="text max-[1285px]:hidden">
+                        <h4 class="font-bold">Akhil Dwivedi</h4>
+                        <p class="tag text-gray-500">@Akhildwi3749</p>
+                    </div>
+                    <img width="25" class="idmore max-[1285px]:hidden" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1) - Copy.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="thinver"></div>
+
+        <div class="second w-full">
+            <div class="top flex">
+                <div
+                    class="foryou cursor-pointer py-3.5 hoverer w-1/2 flex justify-center items-center font-bold relative">
+                    For you
+                    <div class="bar absolute bottom-0 w-12 px-7 rounded-full h-1"></div>
+                </div>
+
+                <div
+                    class="following cursor-pointer relative py-3.5 hoverer w-1/2 flex justify-center items-center font-bold">
+                    Following
+                </div>
+            </div>
+            <div class="thin"></div>
+            <div class="scroller">
+                <div class="posting flex p-5 pb-3 gap-3 ">
+                    <div class="pro">
+                        <img width="42" class="db rounded-full" src="imgs/cool-profile-picture-87h46gcobjl5e4xu.jpg"
+                            alt="">
+                    </div>
+                    <div class="both w-full flex flex-col gap-3">
+                        <input class="what w-full text-xl pt-0.5 bg-black outline-none" type="text"
+                            placeholder="What is happening?">
+                        <div class="reply font-medium relative right-2">
+                            <span class="flex gap-1 blueo">
+                                <img class="" width="20" src="imgs/globe_asia_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="">
+                                Everyone can reply
+                            </span>
+                            <div class="thin absolute top-9"></div>
+                        </div>
+
+                        <div class="down flex justify-between items-center">
+                            <div class="options flex gap-4 pt-2">
+                                <img class="blue" width="21" src="imgs/imagesmode_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="">
+                                <img class="blue" width="21" src="imgs/gif_box_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="">
+                                <img class="blue" width="21" src="imgs/poll.svg" alt="">
+                                <img class="blue" width="21" src="imgs/emoji.svg" alt="">
+                                <img class="blue" width="21"
+                                    src="imgs/pending_actions_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <img class="blue" width="21" src="imgs/location_on_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                                    alt="">
+                            </div>
+
+                            <button
+                                class="text-white mt-1.5 font-semibold px-5 py-1.5 bg-btncolor rounded-full hover:bg-opacity-90">Post</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="show text-most flex justify-center items-center py-3">
+                    Show 385 posts
+                </div>
+
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1780044485541699584/p78MCn3B_normal.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Elon Musk<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@elonmusk · 4h
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">Launch tomorrow morning at 7:20 Texas time
+                                </div>
+                                <div class="imga">
+                                    <img class="rounded-2xl" src="https://pbs.twimg.com/media/GPXBuJQb0AAHfQi?format=jpg&name=small"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;1.9K</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;5.4K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;5.4K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;5.4K</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1700051019525488640/VRqy0bTE_200x200.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Narendra Modi<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@narendramodi · 12h
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1 ">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">देश की जनता-जनार्दन ने एनडीए पर लगातार तीसरी बार अपना विश्वास जताया है। 
+<br>
+<br>
+                                    भारत के इतिहास में ये एक अभूतपूर्व पल है। 
+                                    मैं इस स्नेह और आशीर्वाद के लिए अपने परिवारजनों को नमन करता हूं। 
+                                    <br>
+                                    <br>
+                                    मैं देशवासियों को विश्वास दिलाता हूं कि उनकी आकांक्षाओं को पूरा करने के लिए हम नई ऊर्जा, नई उमंग, नए संकल्पों के साथ आगे बढ़ेंगे।
+                                    <br>
+                                    <br>
+                                    सभी कार्यकर्ताओं ने जिस समर्पण भाव से अथक मेहनत की है, मैं इसके लिए उनका हृदय से आभार व्यक्त करता हूं, अभिनंदन करता हूं।
+                                </div>
+                                
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;1.53M</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;17K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;23K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;12M</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1679854601183571970/l2DlogS6_normal.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Hardik Bhavsar (Modi ka Parivar)<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@hardik2DA · Jun 4
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">हार नहीं मानूंगा, रार नहीं ठानूंगा", "काल के कपाल पर लिखता मिटाता हूँ"
+<br>
+<br>
+                                    जब मात्र 2 सीट थी बीजेपी हम तब भी साथ थे कल पूर्ण बहुमत हासिल किया था तब भी हम साथ थे <br>
+                                    आज हालात कैसे भी हो हम तब भी बीजेपी के साथ है 
+                                    <br>
+                                    <br>
+                                    हम मोदी जी के साथ है #AbkiBaarPhirModiSarkar
+                                </div>
+                                <div class="imga">
+                                    <img class="rounded-2xl" src="https://pbs.twimg.com/media/GPPAIx6asAAIqxK?format=jpg&name=small"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;18K</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;36K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;186K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;7.7M</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1559546768345690113/aXHQwtUV_normal.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Kunal Shukla<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@kunal492001 · Jun 4
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">क्या कारण हो सकता है?
+                                </div>
+                                <div class="imga">
+                                    <img class="rounded-2xl" src="https://pbs.twimg.com/media/GMQUCGWWkAAaio-?format=jpg&name=small"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;879</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;1.6K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;9.4K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;492K</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1173962036130172930/IwOJ73ka_normal.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Gagan Pratap<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@GaganPratapMath · Jun 1
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">जिस सरकार ने पूरे अयोध्या को चमका दिया !
+                                    नया एयरपोर्ट दिया, रेलवे स्टेशन दिया।
+                                    500 सालों के बाद राम मंदिर बनवाकर दिया।
+                                    पूरी की पूरी एक मंदिर इकोनॉमी बनाकर दी !
+                                    उस पार्टी को अयोध्या की  सीट पर हार का सामना करना पड़ा 🥺 मैंने ख़ुद देखा है जितना विकास अयोध्या का बीजेपी ने किया है उतना कोई पार्टी नहीं कर सकती 😥
+                                    <br>
+                                    <br>
+                                    पर ये बात भी सही है :-
+                                    <br>
+                                    <br>
+                                    6 साल से UP में कोई वेकेंसी नही आई
+                                    सारे पेपर लीक हो जाते हैं
+                                    भगवान आस्था का विषय है
+                                    वोट देने का नही🥹 ये भी हार का मुख्य कारण है केवल मंदिर बनाना काफ़ी नहीं है , रोज़गार  ,महंगाई  ,समय पर भर्ती भी तगड़े मुद्दे उभरकर आये है अब
+                                </div>
+                                <div class="imga">
+                                    <img class="rounded-2xl" src="https://pbs.twimg.com/media/GPOWMbAbIAAsNjG?format=jpg&name=small"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;2.7K</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;6.4K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;30K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;1.4M</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1775359167735410688/UDCt_S2Z_200x200.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">Tiger Raja singh Satire<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@TigerRajaSinggh · 18h
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">हर जगह कीचड़ में कमल नहीं खिलता
+<br>
+<br>
+                                    कहीं कहीं का कीचड़ सुअरों के लोटने के लिए भी
+                                    होता है समझदार को इशारा काफी हे 🔥💪
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;920</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;1.6K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;8.7K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;118K</div>
+
+                                <div class="message extra flex  items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+                <div class="thin"></div>
+                <div class="postam px-4 py-2.5">
+                    <div class="post flex gap-2">
+                        <div class="db"><img class="rounded-full" width="44"
+                                src="https://pbs.twimg.com/profile_images/1755593766940168192/3tfRMgtr_normal.jpg" alt=""></div>
+                        <div class="content w-full">
+                            <div class="detail flex relative">
+                                <span class="text-white flex gap-0.5 font-bold">
+                                    सत्य सनातन 'मोदी का परिवार'<img width="21"
+                                        src="imgs/verify.svg" alt=""></span>&nbsp;@REAL___HINDUVT · Jun 4
+                                <div class="hover:bg-lihover rounded-full max-[555px]:hidden icon p-1 absolute right-0 top-0 mb-1">
+                                    <img width="22" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg"
+                                        alt="">
+                                </div>
+                            </div>
+
+                            <div class="ti mb-4">
+                                <div class="text mb-4">नीति बदलना होगा,
+                                </div>
+                                <div class="imga">
+                                    <img class="rounded-2xl" src="https://pbs.twimg.com/media/GPPhOv-bYAEoH2G?format=jpg&name=small"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="oppertunities flex justify-between">
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>&nbsp;1.9K</div>
+                                <div class="message flex common cgreen"><span class="material-symbols-outlined">
+                                        repeat
+                                    </span>&nbsp;5.4K</div>
+                                <div class="message flex common cred"><span class="material-symbols-outlined">
+                                        favorite
+                                    </span>&nbsp;5.4K</div>
+                                <div class="message flex common cblue"><span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>&nbsp;5.4K</div>
+
+                                <div class="message extra flex items-center"><span
+                                        class="news cblue common material-symbols-outlined">
+                                        bookmark
+                                    </span>
+                                    <span class=" news cblue common material-symbols-outlined">
+                                        upload
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="thin"></div>
+            </div>
+        </div>
+        <div class="thinver"></div>
+        <div class="third w-2/3">
+
+            <div class="search m-auto flex">
+                <div class="partner bg-search rounded-tl-full rounded-bl-full flex justify-end align-middle"><img
+                        width="20" src="imgs/search - Copy.svg" alt=""></div>
+                <input class="imp outline-none px-5 py-2.5 bg-search rounded-br-full rounded-tr-full text-white"
+                    type="text" name="search" id="cid" placeholder="Search">
+            </div>
+            <div class="sub relative rounded-2xl px-4 py-4 pt-1.5">
+
+                <h1 class="texta mb-1.5 text-2xl font-bold">Subscribe to Premium</h1>
+                <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+
+                <div class="flex space-x-5 text-normal mt-2.5">
+                    <button
+                        class="font-bold px-4 py-1.5 bg-btncolor rounded-full hover:bg-opacity-90">Subscribe</button>
+                </div>
+            </div>
+ 
+            <div class="happening relative sub rounded-2xl px-0 py-4 pt-1.5">
+
+                <h1 class="texta px-4 text-2xl font-bold mb-4">What’s happening</h1>
+
+                <div class="tags cursor-pointer hover:bg-slate-900 px-4 py-3 relative">
+                    <p class="greycolor">Business & finance · Trending</p>
+                    <h3 class="font-bold">#ExitPolls</h3>
+                    <p class="greycolor">2,379 posts</p>
+                    <div class="hover:bg-lihover rounded-full icon p-1 absolute right-3 top-1.5">
+                        <img width="25" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </div>
+                </div>
+                <div class="tags cursor-pointer hover:bg-slate-900 px-4 py-3 relative">
+                    <p class="greycolor">Politics · Trending</p>
+                    <h3 class="font-bold">#PrimeMinister</h3>
+                    <p class="greycolor">180K posts</p>
+                    <div class="hover:bg-lihover rounded-full icon p-1 absolute right-3 top-1.5">
+                        <img width="25" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </div>
+                </div>
+                <div class="tags cursor-pointer hover:bg-slate-900 px-4 py-3 relative">
+                    <p class="greycolor">Politics · Trending</p>
+                    <h3 class="font-bold">#NEET_परीक्षा_परिणाम</h3>
+                    <p class="greycolor">196K posts</p>
+                    <div class="hover:bg-lihover rounded-full icon p-1 absolute right-3 top-1.5">
+                        <img width="25" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </div>
+                </div>
+                <div class="tags cursor-pointer hover:bg-slate-900 px-4 py-3 relative">
+                    <p class="greycolor">Politics · Trending
+                        
+                        </p>
+                    <h3 class="font-bold">Agniveer</h3>
+                    <p class="greycolor">13.5 posts</p>
+                    <div class="hover:bg-lihover rounded-full icon p-1 absolute right-3 top-1.5">
+                        <img width="25" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </div>
+                </div>
+                <div class="tags cursor-pointer hover:bg-slate-900 px-4 py-3 relative">
+                    <p class="greycolor">Trending in Political figures
+                        
+                       </p>
+                    <h3 class="font-bold">Nitin Gadkari</h3>
+                    <p class="greycolor"> 22.5K posts</p>
+                    <div class="hover:bg-lihover rounded-full icon p-1 absolute right-3 top-1.5">
+                        <img width="25" src="imgs/more_horiz_24dp_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="whofollow subcopy relative rounded-2xl px-0 py-4 pt-1.5">
+
+                <h1 class="texta p-4 pt-1 text-2xl font-bold">Who to follow</h1>
+
+                <div class=" justify-between align-middle cursor-pointer ml-2 flex py-3 px-3.5 tags">
+                    <div class="baxa flex gap-2">
+                        <img width="46" class="db rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1700051019525488640/VRqy0bTE_200x200.jpg" alt="">
+                        <div>
+                            <h4 class="font-bold">Narendra Modi</h4>
+                            <p class="tag text-gray-500">@narendramodi</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <button
+                            class="followcolor mt-1.5 font-semibold px-4 py-1.5 bg-btncolorwhite rounded-full hover:bg-opacity-90">Follow</button>
+                    </div>
+
+                </div>
+                <div class=" justify-between align-middle cursor-pointer ml-2 flex py-3 px-3.5 tags">
+                    <div class="baxa flex gap-2">
+                        <img width="46" class="db rounded-full"
+                            src="https://pbs.twimg.com/profile_images/362027062/amitabh_bachchan_thumbnail_200x200.jpg"
+                            alt="">
+                        <div>
+                            <h4 class="font-bold">amitab bacchan</h4>
+                            <p class="tag text-gray-500">@bigbamitab</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <button
+                            class="followcolor mt-1.5 font-semibold px-4 py-1.5 bg-btncolorwhite rounded-full hover:bg-opacity-90">Follow</button>
+                    </div>
+
+                </div>
+                <div class=" justify-between align-middle cursor-pointer ml-2 flex py-3 px-3.5 tags">
+                    <div class="baxa flex gap-2">
+                        <img width="46" class="db rounded-full"
+                            src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_200x200.jpg" alt="">
+                        <div>
+                            <h4 class="font-bold">Bill Gates</h4>
+                            <p class="tag text-gray-500">@BillGates</p>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <button
+                            class="followcolor mt-1.5 font-semibold px-4 py-1.5 bg-btncolorwhite rounded-full hover:bg-opacity-90">Follow</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer m-auto flex gap-2 gap-x-4 mt-2 text-sm w-80 m-a flex-wrap justify-center align-middle">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy </a>
+                <a href="">Cookie Policy</a>
+                <a href="">Accessibility </a>
+                <a href="">Ads info </a>
+                <a href="">More</a>
+                <a href="">© 2024 X Corp.</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
